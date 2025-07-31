@@ -24,7 +24,7 @@ app.get('/bacheca', (req, res) => {
     {
      titolo: "Jaws: Lo Squalo che ha cambiato il cinema",
      contenuto: "Un approfondimento sul film cult di Steven Spielberg che ha terrorizzato intere generazioni e  lanciato il concetto di blockbuster estivo.",
-     immagine: "imgs/film/jaws.jpeg",
+     immagine: "imgs/jaws.jpeg",
      tags: ["thriller", "classico", "animali", "anni70"]
     }
   ];
