@@ -15,5 +15,5 @@ app.get('/', (req, res) => {
 
 //DICHIARO ALLA NOSTRA APPLICAZIONE DI RESTARE IN ASCOLTO SULLA PORTA DEFINITA IN ALTO
 app.listen(port, () => {
-  console.log(`Server del mio blog`);
+  console.log(`Server del mio blog sulla porta ${port}`);
 })
