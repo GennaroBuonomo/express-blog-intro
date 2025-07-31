@@ -17,3 +17,18 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server del mio blog sulla porta ${port}`);
 })
+
+//DEFINISCO LA ROTTA PER OTTENERE LA BACHECA 
+app.get('/bacheca', (req, res) => {
+  const bacheca = [
+    {
+    titolo: "Jaws: Lo Squalo che ha cambiato il cinema",
+    contenuto: "Un approfondimento sul film cult di Steven Spielberg che ha terrorizzato intere generazioni e lanciato il concetto di blockbuster estivo.",
+    immagine: "imgs/film/jaws.jpeg",
+    tags: ["thriller", "classico", "animali", "anni70"]
+  }
+  ];
+
+  res.json(bacheca);
+
+})
