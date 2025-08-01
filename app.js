@@ -10,7 +10,7 @@ app.use(express.static('public'));
 
 //DEFINISCO LA ROTTA ENTRY POINT DELLA NOSTRA APPLICAZIONE
 app.get('/', (req, res) => {
-  res.send('Server del mio blog')
+  res.send('Server del mio blog');
 });
 
 //DICHIARO ALLA NOSTRA APPLICAZIONE DI RESTARE IN ASCOLTO SULLA PORTA DEFINITA IN ALTO
@@ -20,7 +20,7 @@ app.listen(port, () => {
 
 //DEFINISCO LA ROTTA PER OTTENERE LA BACHECA 
 app.get('/bacheca', (req, res) => {
-  const bacheca = [
+  const posts = [
     {
      titolo: "Jaws: Lo Squalo che ha cambiato il cinema",
      contenuto: "Un approfondimento sul film cult di Steven Spielberg che ha terrorizzato intere generazioni e  lanciato il concetto di blockbuster estivo.",
@@ -35,7 +35,7 @@ app.get('/bacheca', (req, res) => {
     },
     {
      titolo: "Spider-Man: Un eroe tra le ragnatele",
-     contenuto: "Dal fumetto al grande schermo: come l’Uomo Ragno è diventato uno dei supereroi più amati di   sempre.",
+     contenuto: "Dal fumetto al grande schermo: come l' Uomo Ragno è diventato uno dei supereroi più amati di   sempre.",
      immagine: "img/spiderman.jpeg",
      tags: ["supereroi", "marvel", "azione", "fumetti"]
     },
@@ -47,12 +47,12 @@ app.get('/bacheca', (req, res) => {
     },
     {
      titolo: "Zombie: Quando i morti camminano",
-     contenuto: "Dai film di Romero alle serie TV moderne: l’evoluzione del genere zombie nell’immaginario collettivo.",
+     contenuto: "Dai film di Romero alle serie TV moderne: l' evoluzione del genere zombie nell' immaginario collettivo.",
      immagine: "img/zombie.jpeg",
      tags: ["horror", "apocalisse", "non-morti", "survival"]
     }
   ];
 
-  res.json(bacheca);
+  res.json(posts);
 
 })
